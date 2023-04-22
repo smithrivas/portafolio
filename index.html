@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio | Brayan Rivas</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <i class='bx bx-code-alt logo'> Brayan Rivas</i>        
+        <!-- <p>smithrivas93@gmail.com</p> -->
+        <i class='bx bx-menu menu'></i>
+    </nav>
+    <main class="container">
+        <header class="profile">
+            <img src="./img/profile.png" alt="Image profile">
+            <h1>Hola, mi nombre es <span>Brayan Smith Rivas</span> y soy desarrollador web</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aut, incidunt, quam fuga sunt delectus recusandae quas veritatis, atque sint hic in adipisci iste non quo magni exercitationem laboriosam assumenda?</p>
+            <div class="socialMedia">
+                <a href=""><i class='bx bxl-github'></i>Github</a>
+                <a href=""><i class='bx bxl-linkedin-square'></i>Linkedin</a>
+                <a href=""><i class='bx bxs-file-pdf' ></i>Curriculum</a>
+            </div>
+        </header>
+        <section class="aboutMe">
+            <h2>Sobre mi</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam dignissimos quibusdam officia beatae minus laborum porro a assumenda cumque expedita esse voluptatibus exercitationem, debitis perspiciatis nemo perferendis. In, inventore.</p>
+        </section>
+        <section class="skills">
+            <h2>Skills</h2>
+            <div class="skills__grid">
+                <div class="skill__card">
+                    <i class='bx bxl-html5'></i>
+                    <p>HTML5</p>
+                </div>
+                <div class="skill__card">
+                    <i class='bx bxl-css3'></i>
+                    <p>CSS</p>
+                </div>
+                <div class="skill__card">
+                    <i class='bx bxl-javascript'></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill__card">
+                    <i class='bx bxl-react'></i>
+                    <p>React</p>
+                </div>
+                <div class="skill__card">
+                    <i class='bx bxl-git'></i>
+                    <p>Git</p>
+                </div>
+                <div class="skill__card">
+                    <i class='bx bxs-terminal'></i>
+                    <p>Terminal</p>
+                </div>
+            </div>
+        </section>
+        <section class="education">
+            <h2>Formación Académica</h2>
+            <div class="card">
+                <div class="education__card">
+                    <img src="./img/alura.png" alt="Logo Alura y Oracle">
+                </div>
+                <h3>Desarrollador Web Front End</h3>                
+                <h4><a target="_blank" href="https://www.oracle.com/co/education/oracle-next-education/">Alura - Oracle next education <i class='bx bx-link-external'></i></a></h4>                
+                <p>Ene/2023 - En curso actualmente</p>
+            </div>
+            <div class="card">
+                <div class="education__card">
+                    <img src="./img/academlo.png" alt="Logo Alura y Oracle">
+                </div>
+                <h3>Desarrollador Web Full-Stack</h3>
+                <h4><a target="_blank" href="https://www.academlo.com/curso-programacion-web-full-stack/">Academlo <i class='bx bx-link-external'></i></a></h4>                
+                <p>Nov/2022 - En curso actualmente</p>
+            </div>
+            <div class="card">
+                <div class="education__card">
+                    <img src="./img/logoSena.png" alt="Logo SENA">
+                </div>
+                <h3>Tecnologo en Análisis y desarrollo de software</h3>                
+                <h4><a target="_blank" href="https://www.youtube.com/watch?v=ddiy0azeS5g">SENA - Servicio Nacional de Aprendizaje <i class='bx bx-link-external'></i></a></h4>        
+                <p>Nov/2021 - En curso actualmente</p>
+            </div>
+            <div class="card">
+                <div class="education__card">
+                    <img src="./img/bit.jpg" alt="Logo Bogotá institute of technology">
+                </div>
+                <h3>Desarrollo De Software PHP - 360 horas</h3>                
+                <h4><a target="_blank" href="https://bit.institute/index?A=index-es">BIT - Bogotá Institute Of Technology <i class='bx bx-link-external'></i></a></h4>              
+                <p class="lastCard">2017</p>
+            </div>                        
+        </section>
+        <section class="projects">
+            <h2>Proyectos</h2>
+            <div>
+                <img src="./img/proyecto1.png" alt="Captura de página web de rick and morty">
+                <h3>Página Rick and Morty</h3>
+                <p>Es una página que consume la API de Rick and Morty, consta de un buscador en el cual se pueden filtrar cualquiera de las 126 dimensiones por las cuales viajan estos dos personajes.</p>
+                <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
+                <div class="buttons">                    
+                    <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/Acd-react-P03-apiRickandmorty">Repositorio</a></button>
+                    <button class="btn-dem"><a target="_blank" href="https://acd-react-p03-apirickandmorty.netlify.app/">Ver demo</a></button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/proyecto2.png" alt="Captura de proyecto  cotizador de criptomonedas">
+                <h3>Cotizador de criptomonedas</h3>
+                <p>Aplicaciones web que permite cotizar precios de las criptomonedas más valorizadas según la moneda que elijamos para la conversión, se aplicó styled components.</p>
+                <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
+                <div class="buttons">
+                    <button class="btn-rep"><a href="https://github.com/smithrivas/cotizador-criptomonedas">Repositorio</a></button>
+                    <button class="btn-dem"><a target="_blank" href="https://practica-cotizador-criptomonedas.netlify.app/">Ver demo</a></button>
+                </div>
+            </div>
+            <div>
+                <img src="./img/proyecto3.png" alt="Captura de proyecto  administrador de gastos">
+                <h3>Administrador de gastos</h3>
+                <p>Planeador de gastos que cuenta con un registro de presupuesto, registro de gastos con categorias, grafica para ver el estado del presupuesto, filtrado por categorias, se utiliza el localStorage.</p>
+                <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
+                <div class="buttons">
+                    <button class="btn-rep"><a href="https://github.com/smithrivas/UDReact-control-gastos">Repositorio</a></button>
+                    <button class="btn-dem"><a target="_blank" href="https://udreact-control-gastos.netlify.app/">Ver demo</a></button>
+                </div>
+            </div>          
+            <div>
+                <img src="" alt="">
+                <h3>Proyecto</h3>
+                <p>Descripción</p>
+                <div>
+                    <button class="btn-rep">Repositorio</button>
+                    <button class="btn-dem">Ver demo</button>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h2>Contacto</h2>
+            <form action="">
+                <input type="text">
+                <input type="text">
+                <input type="text">
+                <textarea name="" id="" cols="20" rows="5"></textarea>
+                <button>Enviar mensaje</button>
+            </form>
+        </section>
+    </main>
+    <footer>Desarrollado por Brayan Rivas - 2023</footer>
+</body>
+</html>

@@ -13,12 +13,19 @@
     <nav class="navbar">
         <i class='bx bx-code-alt logo'> Brayan Rivas</i>        
         <!-- <p>smithrivas93@gmail.com</p> -->
-        <i class='bx bx-menu menu'></i>
+        <i class='bx bx-menu menu' onclick="handleNavBar()"></i>
     </nav>
+    <ul class="nav-options disabled" onclick="closeMenu()">
+        <li><a href="#aboutMe">Sobre mi</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Formación académica</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#form">Contacto</a></li>
+    </ul>
     <main class="container">
         <header class="profile">
-            <img src="./img/profile.png" alt="Image profile">
-            <h1>Hola, mi nombre es <span>Brayan Smith Rivas</span> y soy desarrollador web</h1>
+            <img src="./img/profile2.png" alt="Image profile">
+            <h1>Hola, mi nombre es <span class="nameAboutMe">Brayan Smith Rivas</span> y soy desarrollador web</h1>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aut, incidunt, quam fuga sunt delectus recusandae quas veritatis, atque sint hic in adipisci iste non quo magni exercitationem laboriosam assumenda?</p>
             <div class="socialMedia">
                 <a href=""><i class='bx bxl-github'></i>Github</a>
@@ -26,11 +33,11 @@
                 <a href=""><i class='bx bxs-file-pdf' ></i>Curriculum</a>
             </div>
         </header>
-        <section class="aboutMe">
+        <section class="aboutMe" id="aboutMe">
             <h2>Sobre mi</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam dignissimos quibusdam officia beatae minus laborum porro a assumenda cumque expedita esse voluptatibus exercitationem, debitis perspiciatis nemo perferendis. In, inventore.</p>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
             <h2>Skills</h2>
             <div class="skills__grid">
                 <div class="skill__card">
@@ -59,7 +66,7 @@
                 </div>
             </div>
         </section>
-        <section class="education">
+        <section class="education" id="education">
             <h2>Formación Académica</h2>
             <div class="card">
                 <div class="education__card">
@@ -94,7 +101,7 @@
                 <p class="lastCard">2017</p>
             </div>                        
         </section>
-        <section class="projects">
+        <section class="projects" id="projects">
             <h2>Proyectos</h2>
             <div>
                 <img src="./img/proyecto1.png" alt="Captura de página web de rick and morty">
@@ -137,33 +144,40 @@
                 </div>
             </div>          
         </section>
-        <section class="form">
+        <section class="form" id="form">
             <h2>Contacto</h2>
             <form action="">
                 <div class="input">
-                    <label for="">Nombre</label>
-                    <input type="text">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name">
                 </div>
                 <div class="input">
-                    <label for="">E-mail</label>
-                    <input type="email">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email">
                 </div>
                 <div class="input">
-                    <label for="">Asunto</label>
-                    <input type="text">
+                    <label for="title">Asunto</label>
+                    <input type="text" id="title">
                 </div>
                 <div class="input">
-                    <label for="">Mensaje</label>
-                    <textarea name="" id="" cols="30" rows="6"></textarea>
+                    <label for="message">Mensaje</label>
+                    <textarea id="message" cols="30" rows="6"></textarea>
                 </div>                
                 <button class="btn-dem btn-dem--submit">Enviar mensaje</button>
             </form>
         </section>
+        <div class="go-top-container">
+            <div class="go-top-button">
+                <i class="fas fa-chevron-up"></i>
+            </div>
+        </div>
     </main>
     <footer>                
         <p class="social"><a target="_blank" href="https://github.com/smithrivas"><i class="fa-brands fa-github"></i></a>   <a target="_blank" href="https://www.linkedin.com/in/brayan-smith-rivas-bustos55b321104/"><i class="fa-brands fa-linkedin"></i></a></p>
         <p class="info-footer">Web Developer: <i class="fas fa-terminal"></i><a target="_blank" href="https://github.com/smithrivas">Brayan Smith Rivas</a></p>        
     </footer>
+    <script src="./js/main.js"></script>
+    <script src="./js/gotop.js"></script>
     <script src="https://kit.fontawesome.com/f8db5cee1d.js" crossorigin="anonymous"></script>
 </body>
 </html>

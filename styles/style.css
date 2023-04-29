@@ -9,7 +9,7 @@ html{
 :root{
     --background: #081b29;
     /* --background: #F5F5F5; */
-    --background2: #14c58a0e;
+    --background2: #0b2335;
     --font: #ededed;
     /* --font: #3d3d3d; */
     --font2: #cacaca;
@@ -22,7 +22,7 @@ html{
     --blue3: #007fb1;    
     /* --blue3: #d5e7ff;     */
     --name: #00abf0;
-    --background-input: #081b29c2;
+    --background-input: #081b29;
 }
 
 body{

@@ -11,7 +11,7 @@
 </head>
 <body>
     <nav class="navbar">
-        <i class='bx bx-code-alt logo'> Brayan Rivas</i>        
+        <i class='bx bx-code-alt logo'>Brayan Rivas</i>        
         <!-- <p>smithrivas93@gmail.com</p> -->
         <i class='bx bx-menu menu' onclick="handleNavBar()"></i>
     </nav>
@@ -25,12 +25,14 @@
     <main class="container">
         <header class="profile">
             <img src="./img/profile2.png" alt="Image profile">
-            <h1>Hola, mi nombre es <span class="nameAboutMe">Brayan Smith Rivas</span> y soy desarrollador web</h1>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aut, incidunt, quam fuga sunt delectus recusandae quas veritatis, atque sint hic in adipisci iste non quo magni exercitationem laboriosam assumenda?</p>
-            <div class="socialMedia">
-                <a href=""><i class='bx bxl-github'></i>Github</a>
-                <a href=""><i class='bx bxl-linkedin-square'></i>Linkedin</a>
-                <a href=""><i class='bx bxs-file-pdf' ></i>Curriculum</a>
+            <div>
+                <h1>Hola, mi nombre es <span class="nameAboutMe">Brayan Smith Rivas</span> y soy desarrollador web</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aut, incidunt, quam fuga sunt delectus recusandae quas veritatis, atque sint hic in adipisci iste non quo magni exercitationem laboriosam assumenda?</p>
+                <div class="socialMedia">
+                    <a href=""><i class='bx bxl-github'></i>Github</a>
+                    <a href=""><i class='bx bxl-linkedin-square'></i>Linkedin</a>
+                    <a href=""><i class='bx bxs-file-pdf' ></i>Curriculum</a>
+                </div>
             </div>
         </header>
         <section class="aboutMe" id="aboutMe">
@@ -68,38 +70,40 @@
         </section>
         <section class="education" id="education">
             <h2>Formación Académica</h2>
-            <div class="card">
-                <div class="education__card">
-                    <img src="./img/alura.png" alt="Logo Alura y Oracle">
+            <div class="education__grid">
+                <div class="card">
+                    <div class="education__card">
+                        <img src="./img/alura.png" alt="Logo Alura y Oracle">
+                    </div>
+                    <h3>Desarrollador Web Front End</h3>                
+                    <h4><a target="_blank" href="https://www.oracle.com/co/education/oracle-next-education/">Alura - Oracle next education <i class='bx bx-link-external'></i></a></h4>                
+                    <p>Ene/2023 - En curso actualmente</p>
                 </div>
-                <h3>Desarrollador Web Front End</h3>                
-                <h4><a target="_blank" href="https://www.oracle.com/co/education/oracle-next-education/">Alura - Oracle next education <i class='bx bx-link-external'></i></a></h4>                
-                <p>Ene/2023 - En curso actualmente</p>
+                <div class="card">
+                    <div class="education__card">
+                        <img src="./img/academlo.png" alt="Logo Alura y Oracle">
+                    </div>
+                    <h3>Desarrollador Web Full-Stack</h3>
+                    <h4><a target="_blank" href="https://www.academlo.com/curso-programacion-web-full-stack/">Academlo <i class='bx bx-link-external'></i></a></h4>                
+                    <p>Nov/2022 - En curso actualmente</p>
+                </div>
+                <div class="card">
+                    <div class="education__card">
+                        <img src="./img/logoSena.png" alt="Logo SENA">
+                    </div>
+                    <h3>Tecnologo en Análisis y desarrollo de software</h3>                
+                    <h4><a target="_blank" href="https://www.youtube.com/watch?v=ddiy0azeS5g">SENA - Servicio nacional de aprendizaje <i class='bx bx-link-external'></i></a></h4>        
+                    <p>Nov/2021 - En curso actualmente</p>
+                </div>
+                <div class="card">
+                    <div class="education__card">
+                        <img src="./img/bit.jpg" alt="Logo Bogotá institute of technology">
+                    </div>
+                    <h3>Desarrollo De Software PHP - 360 horas</h3>                
+                    <h4><a target="_blank" href="https://bit.institute/index?A=index-es">BIT - Bogotá Institute Of Technology <i class='bx bx-link-external'></i></a></h4>              
+                    <p class="lastCard">2017</p>
+                </div>                        
             </div>
-            <div class="card">
-                <div class="education__card">
-                    <img src="./img/academlo.png" alt="Logo Alura y Oracle">
-                </div>
-                <h3>Desarrollador Web Full-Stack</h3>
-                <h4><a target="_blank" href="https://www.academlo.com/curso-programacion-web-full-stack/">Academlo <i class='bx bx-link-external'></i></a></h4>                
-                <p>Nov/2022 - En curso actualmente</p>
-            </div>
-            <div class="card">
-                <div class="education__card">
-                    <img src="./img/logoSena.png" alt="Logo SENA">
-                </div>
-                <h3>Tecnologo en Análisis y desarrollo de software</h3>                
-                <h4><a target="_blank" href="https://www.youtube.com/watch?v=ddiy0azeS5g">SENA - Servicio Nacional de Aprendizaje <i class='bx bx-link-external'></i></a></h4>        
-                <p>Nov/2021 - En curso actualmente</p>
-            </div>
-            <div class="card">
-                <div class="education__card">
-                    <img src="./img/bit.jpg" alt="Logo Bogotá institute of technology">
-                </div>
-                <h3>Desarrollo De Software PHP - 360 horas</h3>                
-                <h4><a target="_blank" href="https://bit.institute/index?A=index-es">BIT - Bogotá Institute Of Technology <i class='bx bx-link-external'></i></a></h4>              
-                <p class="lastCard">2017</p>
-            </div>                        
         </section>
         <section class="projects" id="projects">
             <h2>Proyectos</h2>

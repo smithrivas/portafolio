@@ -10,34 +10,39 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav class="navbar">
-        <i class='bx bx-code-alt logo'>Brayan Rivas</i>        
-        <!-- <p>smithrivas93@gmail.com</p> -->
-        <i class='bx bx-menu menu' onclick="handleNavBar()"></i>
-    </nav>
-    <ul class="nav-options disabled" onclick="closeMenu()">
-        <li><a href="#aboutMe">Sobre mi</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Formación académica</a></li>
-        <li><a href="#projects">Proyectos</a></li>
-        <li><a href="#form">Contacto</a></li>
-    </ul>
+    <div class="nav-flex">
+        <nav class="navbar">
+            <a href="index.html"><i class='bx bx-code-alt logo'>Brayan Rivas</i></a>
+            <i class='bx bx-menu menu' onclick="handleNavBar()"></i>
+        </nav>
+        <ul class="nav-options nav-desk disabled" onclick="closeMenu()">
+            <li><a href="#aboutMe">Sobre mi</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#education">Educación</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#form">Contacto</a></li>    
+            <li class="nav_email">smithrivas.dev@gmail.com</li>        
+        </ul>
+    </div>
     <main class="container">
         <header class="profile">
             <img src="./img/profile2.png" alt="Image profile">
             <div>
                 <h1>Hola, mi nombre es <span class="nameAboutMe">Brayan Smith Rivas</span> y soy desarrollador web</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia aut, incidunt, quam fuga sunt delectus recusandae quas veritatis, atque sint hic in adipisci iste non quo magni exercitationem laboriosam assumenda?</p>
+                <p>Soy una persona apasionada por el desarrollo web, responsable y con facilidad para trabajar en equipo, me gusta afrontar retos donde pueda compartir mi experiencia y a su vez sumar nuevos conocimientos, en cuanto a conocimientos técnicos trabajo principalmente con HTML, CSS, JS y REACT.</p>
                 <div class="socialMedia">
-                    <a href=""><i class='bx bxl-github'></i>Github</a>
-                    <a href=""><i class='bx bxl-linkedin-square'></i>Linkedin</a>
-                    <a href=""><i class='bx bxs-file-pdf' ></i>Curriculum</a>
+                    <a target="_blank" href="https://github.com/smithrivas"><i class='bx bxl-github'></i>Github</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/brayan-smith-rivas-bustos55b321104/"><i class='bx bxl-linkedin-square'></i>Linkedin</a>
+                    <a target="_blank" href="https://drive.google.com/file/d/1INE4tegIvoSjIbcX8rJrLlWNjqhpjike/view?usp=sharing"><i class='bx bxs-file-pdf' ></i>Curriculum</a>
                 </div>
             </div>
         </header>
         <section class="aboutMe" id="aboutMe">
             <h2>Sobre mi</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi quam dignissimos quibusdam officia beatae minus laborum porro a assumenda cumque expedita esse voluptatibus exercitationem, debitis perspiciatis nemo perferendis. In, inventore.</p>
+            <p>Estudiante de desarrollo de software, con conocimientos en HTML, CSS, JavaScript, React, Git.
+                Con facilidad para trabajar en equipo, buena comunicación asertiva, atención al detalle, agilidad y capacidad de adaptación, gusto por el aprendizaje, experiencia en modalidad teletrabajo.
+                
+                Busco iniciar mi trayectoria laboral en el área del desarrollo web aplicando todo lo aprendido de este campo, anteriormente me desempeñé en cargos como analista de datos, backoffice y servicio al cliente.</p>
         </section>
         <section class="skills" id="skills">
             <h2>Skills</h2>
@@ -107,67 +112,91 @@
         </section>
         <section class="projects" id="projects">
             <h2>Proyectos</h2>
-            <div>
+            <div class="grid_projects1">
                 <img src="./img/proyecto1.png" alt="Captura de página web de rick and morty">
-                <h3>Página Rick and Morty</h3>
-                <p>Es una página que consume la API de Rick and Morty, consta de un buscador en el cual se pueden filtrar cualquiera de las 126 dimensiones por las cuales viajan estos dos personajes.</p>
-                <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
-                <div class="buttons">                    
-                    <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/Acd-react-P03-apiRickandmorty">Repositorio</a></button>
-                    <button class="btn-dem"><a target="_blank" href="https://acd-react-p03-apirickandmorty.netlify.app/">Ver demo</a></button>
+                <div>
+                    <h3>Página Rick and Morty</h3>
+                    <p>Es una página que consume la API de Rick and Morty, consta de un buscador en el cual se pueden filtrar cualquiera de las 126 dimensiones por las cuales viajan estos dos personajes.</p>
+                    <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
+                    <div class="buttons">                    
+                        <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/Acd-react-P03-apiRickandmorty">Repositorio</a></button>
+                        <button class="btn-dem"><a target="_blank" href="https://acd-react-p03-apirickandmorty.netlify.app/">Ver demo</a></button>
+                    </div>
                 </div>
             </div>
-            <div>
+            
+            <div class="grid_projects2">
                 <img src="./img/proyecto2.png" alt="Captura de proyecto  cotizador de criptomonedas">
-                <h3>Cotizador de criptomonedas</h3>
-                <p>Aplicaciones web que permite cotizar precios de las criptomonedas más valorizadas según la moneda que elijamos para la conversión, se aplicó styled components.</p>
-                <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
-                <div class="buttons">
-                    <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/cotizador-criptomonedas">Repositorio</a></button>
-                    <button class="btn-dem"><a target="_blank" href="https://practica-cotizador-criptomonedas.netlify.app/">Ver demo</a></button>
+                <div>
+                    <h3>Cotizador de criptomonedas</h3>
+                    <p>Aplicaciones web que permite cotizar precios de las criptomonedas más valorizadas según la moneda que elijamos para la conversión, se aplicó styled components.</p>
+                    <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, styled-components, Vite</p>
+                    <div class="buttons">
+                        <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/cotizador-criptomonedas">Repositorio</a></button>
+                        <button class="btn-dem"><a target="_blank" href="https://practica-cotizador-criptomonedas.netlify.app/">Ver demo</a></button>
+                    </div>
                 </div>
             </div>
-            <div>
+            
+            <div class="grid_projects1">
                 <img src="./img/proyecto3.png" alt="Captura de proyecto  administrador de gastos">
-                <h3>Administrador de gastos</h3>
-                <p>Planeador de gastos que cuenta con un registro de presupuesto, registro de gastos con categorias, grafica para ver el estado del presupuesto, filtrado por categorias, se utiliza el localStorage.</p>
-                <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
-                <div class="buttons">
-                    <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/UDReact-control-gastos">Repositorio</a></button>
-                    <button class="btn-dem"><a target="_blank" href="https://udreact-control-gastos.netlify.app/">Ver demo</a></button>
+                <div>
+                    <h3>Administrador de gastos</h3>
+                    <p>Planeador de gastos que cuenta con un registro de presupuesto, registro de gastos con categorias, grafica para ver el estado del presupuesto, filtrado por categorias, se utiliza el localStorage.</p>
+                    <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
+                    <div class="buttons">
+                        <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/UDReact-control-gastos">Repositorio</a></button>
+                        <button class="btn-dem"><a target="_blank" href="https://udreact-control-gastos.netlify.app/">Ver demo</a></button>
+                    </div>
                 </div>
             </div>          
-            <div>
+            <div class="grid_projects2">
+                <img src="./img/proyecto5.png" alt="Captura de proyecto  cards">
+                <div>
+                    <h3>Cards</h3>
+                    <p>Aplicación que consume datos de una Api y los muestra en orden aleatorio, al cambiar los datos de la card, también cambia el color de fondo.</p>
+                    <p><span>Tecnologias: </span>HTML, CSS, JavaScript, React, Vite</p>
+                    <div class="buttons lastProject">
+                        <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/Acd-react-P01-cards">Repositorio</a></button>
+                        <button class="btn-dem"><a target="_blank" href="https://acd-react-p01-cards.netlify.app/">Ver demo</a></button>
+                    </div>
+                </div>
+            </div>          
+            <div class="grid_projects1">
                 <img src="./img/proyecto4.png" alt="Captura de proyecto  tienda de muebles">
-                <h3>Front E-commerce tienda de muebles</h3>
-                <p>Front de e-commerce de una tienda de muebles, solo está realizado en HTML y CSS, se realizó con la finalidad de practicar maquetación de un sitio.</p>
-                <p><span>Tecnologias: </span>HTML y CSS</p>
-                <div class="buttons lastProject">
-                    <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/Ecommerce-Tienda_muebles">Repositorio</a></button>
-                    <button class="btn-dem"><a target="_blank" href="https://ud-ecommerce-muebles.netlify.app/">Ver demo</a></button>
+                <div>
+                    <h3>Front E-commerce tienda de muebles</h3>
+                    <p>Front de e-commerce de una tienda de muebles, solo está realizado en HTML y CSS, se realizó con la finalidad de practicar maquetación de un sitio.</p>
+                    <p><span>Tecnologias: </span>HTML y CSS</p>
+                    <div class="buttons lastProject">
+                        <button class="btn-rep"><a target="_blank" href="https://github.com/smithrivas/Ecommerce-Tienda_muebles">Repositorio</a></button>
+                        <button class="btn-dem"><a target="_blank" href="https://ud-ecommerce-muebles.netlify.app/">Ver demo</a></button>
+                    </div>
                 </div>
             </div>          
         </section>
         <section class="form" id="form">
             <h2>Contacto</h2>
-            <form action="">
+            <form action="https://formsubmit.co/smithrivas.dev@gmail.com" method="POST">
                 <div class="input">
                     <label for="name">Nombre</label>
-                    <input type="text" id="name">
+                    <input type="text" id="name" name="name">
                 </div>
                 <div class="input">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email">
+                    <input type="email" id="email" name="email">
                 </div>
                 <div class="input">
                     <label for="title">Asunto</label>
-                    <input type="text" id="title">
+                    <input type="text" id="title" name="title"> 
                 </div>
                 <div class="input">
                     <label for="message">Mensaje</label>
-                    <textarea id="message" cols="30" rows="6"></textarea>
+                    <textarea id="message" name="message" cols="30" rows="6"></textarea>
                 </div>                
-                <button class="btn-dem btn-dem--submit">Enviar mensaje</button>
+                <div class="send_message">
+                    <button class="btn-dem btn-dem--submit">Enviar mensaje</button>
+                </div>
             </form>
         </section>
         <div class="go-top-container">
